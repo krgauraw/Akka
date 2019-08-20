@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Akka</artifactId>
+        <groupId>demo.akka</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>ActorSystem_P1-2.11_2.4.8</artifactId>
+    <packaging>jar</packaging>
+
+    <properties>
+        <java.version.source>1.8</java.version.source>
+        <java.version.target>1.8</java.version.target>
+    </properties>
+
+  <dependencies>
+       <!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
+       <dependency>
+           <groupId>org.scala-lang</groupId>
+           <artifactId>scala-library</artifactId>
+           <version>2.11.8</version>
+       </dependency>
+       <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor -->
+       <dependency>
+           <groupId>com.typesafe.akka</groupId>
+           <artifactId>akka-actor_2.11</artifactId>
+           <version>2.4.8</version>
+       </dependency>
+   </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.3.2</version>
+                    <configuration>
+                        <source>${java.version.source}</source>
+                        <target>${java.version.target}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
